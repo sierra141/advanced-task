@@ -7,9 +7,9 @@ const ColorsList = ({ colors, buttonColor }) => {
         <DragDropContext onDragEnd={(param) =>{
             const srcIndex = param.source.index;
             const destIndex = param.destination?.index;
-            if(destIndex){
+
             colors.splice(destIndex, 0, colors.splice(srcIndex, 1)[0]);
-            }
+
         }}>
             <Droppable droppableId="colorList">
                 {(provided) => (

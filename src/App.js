@@ -46,7 +46,6 @@ const App = () => {
         if (!colors.some(color => color.hex === manualColor.hex)){
           setColors([...colors, manualColor]);
           setButtonColor(manualColor.hex);
-          setText("Get Color");
         }
         else {
           alert("Color already exists!");
